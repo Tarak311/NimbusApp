@@ -11,6 +11,17 @@ server.get('/', (req, res) => {
     content: '...'
   });
 });
+server.get('/login', (req, res) => {
+  res.render('login', {
+    content: '...'
+  });
+});
+
+server.get('/register', (req, res) => {
+  res.render('register', {
+    content: '...'
+  });
+});
 
 server.use('/api', apiRouter);
 server.use(express.static('public'));
