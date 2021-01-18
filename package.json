@@ -18,15 +18,17 @@
   },
   "homepage": "https://github.com/jscomplete/learn-fullstack-javascript#readme",
   "dependencies": {
-    "ejs": "^2.5.2",
-    "express": "^4.14.0",
-    "mongodb": "^2.2.10",
-    "react": "^15.3.2",
-    "react-dom": "^15.3.2",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.5.3",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.10",
+    "proptypes": "^1.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
     "web-vitals": "^0.2.4"
   },
   "devDependencies": {
@@ -37,8 +39,22 @@
     "babel-preset-react": "^6.16.0",
     "babel-preset-stage-2": "^6.17.0",
     "eslint": "^3.7.1",
+    "css-loader": "^0.28.0",
     "eslint-plugin-react": "^6.4.0",
     "nodemon": "^1.11.0",
+    "style-loader": "^0.16.1",
     "webpack": "^1.13.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

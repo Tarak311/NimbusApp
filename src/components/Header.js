@@ -1,4 +1,5 @@
 import React from 'react';
+import Proptypes from 'proptypes';
 
 const Header = ({ message }) => {
   return (
@@ -9,7 +10,7 @@ const Header = ({ message }) => {
 };
 
 Header.propTypes = {
-  message: React.PropTypes.string
+  message: Proptypes.string
 };
 
 export default Header;
