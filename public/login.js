@@ -3731,9 +3731,9 @@
 
 /***/ }),
 /* 31 */
-/*!*****************************!*\
-  !*** ./~/react-is/index.js ***!
-  \*****************************/
+/*!******************************************!*\
+  !*** ./~/prop-types/~/react-is/index.js ***!
+  \******************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {'use strict';
@@ -3743,13 +3743,13 @@
 	} else {
 	  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ 33);
 	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../process/browser.js */ 3)))
 
 /***/ }),
 /* 32 */
-/*!***************************************************!*\
-  !*** ./~/react-is/cjs/react-is.production.min.js ***!
-  \***************************************************/
+/*!****************************************************************!*\
+  !*** ./~/prop-types/~/react-is/cjs/react-is.production.min.js ***!
+  \****************************************************************/
 /***/ (function(module, exports) {
 
 	/** @license React v16.13.1
@@ -3829,9 +3829,9 @@
 
 /***/ }),
 /* 33 */
-/*!************************************************!*\
-  !*** ./~/react-is/cjs/react-is.development.js ***!
-  \************************************************/
+/*!*************************************************************!*\
+  !*** ./~/prop-types/~/react-is/cjs/react-is.development.js ***!
+  \*************************************************************/
 /***/ (function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(process) {/** @license React v16.13.1
@@ -4016,7 +4016,7 @@
 	    exports.typeOf = typeOf;
 	  })();
 	}
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../process/browser.js */ 3)))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(/*! ./../../../../process/browser.js */ 3)))
 
 /***/ }),
 /* 34 */
