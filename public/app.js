@@ -17712,7 +17712,7 @@
 	          _react2.default.createElement(
 	            _reactRouterDom.Link,
 	            { className: 'navbar-brand', to: "/sign-in" },
-	            'RemoteStack'
+	            'LittleOBI'
 	          ),
 	          _react2.default.createElement(
 	            'div',
@@ -17725,7 +17725,7 @@
 	                { className: 'nav-item' },
 	                _react2.default.createElement(
 	                  _reactRouterDom.Link,
-	                  { className: 'nav-link', to: "/sign-in" },
+	                  { className: 'nav-link', to: "/login" },
 	                  'Sign in'
 	                )
 	              ),
@@ -17734,7 +17734,7 @@
 	                { className: 'nav-item' },
 	                _react2.default.createElement(
 	                  _reactRouterDom.Link,
-	                  { className: 'nav-link', to: "/sign-up" },
+	                  { className: 'nav-link', to: "/register" },
 	                  'Sign up'
 	                )
 	              )
@@ -17896,7 +17896,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                "form",
-	                null,
+	                { action: "/login", method: "POST" },
 	                _react2.default.createElement(
 	                    "h3",
 	                    null,
@@ -17910,7 +17910,7 @@
 	                        null,
 	                        "Email"
 	                    ),
-	                    _react2.default.createElement("input", { type: "email", className: "form-control", placeholder: "Enter email" })
+	                    _react2.default.createElement("input", { type: "email", id: "email", name: "email", className: "form-control", placeholder: "Enter email" })
 	                ),
 	                _react2.default.createElement(
 	                    "div",
@@ -17920,7 +17920,7 @@
 	                        null,
 	                        "Password"
 	                    ),
-	                    _react2.default.createElement("input", { type: "password", className: "form-control", placeholder: "Enter password" })
+	                    _react2.default.createElement("input", { type: "password", id: "password", name: "password", className: "form-control", placeholder: "Enter password" })
 	                ),
 	                _react2.default.createElement(
 	                    "div",
@@ -17979,6 +17979,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouterDom = __webpack_require__(/*! react-router-dom */ 15);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18001,7 +18003,7 @@
 	        value: function render() {
 	            return _react2.default.createElement(
 	                "form",
-	                null,
+	                { action: "/register", method: "POST" },
 	                _react2.default.createElement(
 	                    "h3",
 	                    null,
@@ -18015,7 +18017,7 @@
 	                        null,
 	                        "First name"
 	                    ),
-	                    _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "First name" })
+	                    _react2.default.createElement("input", { type: "text", id: "name", name: "name", className: "form-control", placeholder: "First name", required: true })
 	                ),
 	                _react2.default.createElement(
 	                    "div",
@@ -18035,7 +18037,7 @@
 	                        null,
 	                        "Email"
 	                    ),
-	                    _react2.default.createElement("input", { type: "email", className: "form-control", placeholder: "Enter email" })
+	                    _react2.default.createElement("input", { type: "email", id: "email", name: "email", className: "form-control", placeholder: "Enter email", required: true })
 	                ),
 	                _react2.default.createElement(
 	                    "div",
@@ -18045,7 +18047,7 @@
 	                        null,
 	                        "Password"
 	                    ),
-	                    _react2.default.createElement("input", { type: "password", className: "form-control", placeholder: "Enter password" })
+	                    _react2.default.createElement("input", { type: "password", id: "password", name: "password", className: "form-control", placeholder: "Enter password", required: true })
 	                ),
 	                _react2.default.createElement(
 	                    "button",
@@ -18057,8 +18059,8 @@
 	                    { className: "forgot-password text-right" },
 	                    "Already registered ",
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#" },
+	                        _reactRouterDom.Link,
+	                        { className: "nav-link", to: "/login" },
 	                        "log in?"
 	                    )
 	                )

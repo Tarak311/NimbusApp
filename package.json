@@ -1,6 +1,6 @@
 {
-  "name": "fulljs",
-  "version": "1.0.0",
+  "name": "NimbusApp",
+  "version": "1.0.1",
   "description": "Learning Fullstack JavaScript Development: MongoDB, Node.js, React.js",
   "main": "index.js",
   "scripts": {
@@ -9,22 +9,32 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jscomplete/learn-fullstack-javascript.git"
+    "url": "git+https://github.com/Tarak311/NimbusApp.git"
   },
   "author": "",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/jscomplete/learn-fullstack-javascript/issues"
+    "url": "https://github.com/Tarak311/NimbusApp/issues"
   },
-  "homepage": "https://github.com/jscomplete/learn-fullstack-javascript#readme",
+  "homepage": "https://github.com/Tarak311/NimbusApp/#readme",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "bcrypt": "^3.0.6",
     "bootstrap": "^4.5.3",
-    "ejs": "^2.5.2",
-    "express": "^4.14.0",
-    "mongodb": "^2.2.10",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^2.6.2",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongodb": "^2.2.36",
+    "mongoose": "^5.11.12",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "proptypes": "^1.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -41,9 +51,10 @@
     "eslint": "^3.7.1",
     "css-loader": "^0.28.0",
     "eslint-plugin-react": "^6.4.0",
-    "nodemon": "^1.11.0",
     "style-loader": "^0.16.1",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "dotenv": "^8.0.0",
+    "nodemon": "^1.19.1"
   },
   "browserslist": {
     "production": [

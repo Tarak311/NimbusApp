@@ -3,18 +3,18 @@ import React, { Component } from "react";
 export default class Signin extends Component {
     render() {
         return (
-            <form>
+            <form action="/login" method="POST" >
 
                 <h3>Log in</h3>
 
                 <div className="form-group">
                     <label>Email</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <input type="email" id="email" name="email" className="form-control" placeholder="Enter email" />
                 </div>
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password" id="password" name="password" className="form-control" placeholder="Enter password" />
                 </div>
 
                 <div className="form-group">
