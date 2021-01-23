@@ -12,6 +12,10 @@ module.exports = {
         loader: 'style-loader!css-loader!',
       },
       {
+        test: /\.json$/,
+        loader: 'json-loader'
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader'
       }
