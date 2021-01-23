@@ -9,5 +9,5 @@ export const logStars = function(message) {
 };
 
 export default {
-  port: env.PORT || 8898
+  port: env.PORT || 8900
 };
