@@ -1,5 +1,5 @@
-var mongourl =  "mongodb+srv://tarak311:Lalohel311@littlemongocluster.ge3qg.mongodb.net/nimbusapp?retryWrites=true&w=majority"
-var secretpswd = "Lalohel311"
+var mongourl =  "mongodb+srv://usera:userb@littlemongocluster.ge3qg.mongodb.net/nimbusapp?retryWrites=true&w=majority"
+var secretpswd = "notsoobivios"
 export default {
     url : mongourl ,
     pswd : secretpswd,
