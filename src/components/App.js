@@ -1,20 +1,41 @@
 import React from 'react';
-import Header from './Header';
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-class App extends React.Component {
-  state = {
-    pageHeader: 'Naming Contests'
-  };
-  render() {
-    return (
-      <div className="App">
-        <Header message={this.state.pageHeader} />
-        <div>
-          ...
+import Signin from "./subcomponents/login.components"; 
+import SignUp from "./subcomponents/signup.components";
+
+function App() {
+  return (<Router>
+    <div className="App">
+      <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+        <div className="container">
+          <Link className="navbar-brand" to={"/sign-in"}>LittleOBI</Link>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link className="nav-link" to={"/login"}>Sign in</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to={"/register"}>Sign up</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div className="outer">
+        <div className="inner">
+          <Switch>
+            <Route exact path='/' component={Signin} />
+            <Route path="/login" component={Signin} />
+            <Route path="/register" component={SignUp} />
+          </Switch>
         </div>
       </div>
-    );
-  }
+    </div></Router>
+  );
 }
 
 export default App;
