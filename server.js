@@ -17,7 +17,7 @@ const  MongoStore = require('connect-mongo')(session)
 const methodOverride = require('method-override')
 const db  = require('./lib/db')
 const auth  = require('./lib/auth')
-
+import secrets from "./secrets";
 import config from './config';
 import apiRouter from './api';
 app.set('view engine', 'ejs');
@@ -25,7 +25,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({ extended: false }))
 app.use(flash())
 app.use(session({
-  secret: "Lalohel311",
+  secret: secrets.pswd,
   resave: true,
   store: new MongoStore({mongooseConnection: db}),
   saveUninitialized: false  
@@ -57,6 +57,7 @@ app.post('/register',checkNotAuthenticated,async (req, res, next) => {
     try {
       const user = new UserModel({
         username: req.body.name,
+        lastname : req.body.lastname,
         email: req.body.email,
         password: req.body.password,
       });

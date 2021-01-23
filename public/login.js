@@ -17922,7 +17922,7 @@
 	                        null,
 	                        "Last name"
 	                    ),
-	                    _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "Last name" })
+	                    _react2.default.createElement("input", { type: "text", id: "lastname", name: "lastname", className: "form-control", placeholder: "Last name" })
 	                ),
 	                _react2.default.createElement(
 	                    "div",
@@ -18016,7 +18016,7 @@
 	          { className: 'container' },
 	          _react2.default.createElement(
 	            _reactRouterDom.Link,
-	            { className: 'navbar-brand', to: "/sign-in" },
+	            { className: 'navbar-brand', to: "/login" },
 	            'LittleOBI'
 	          ),
 	          _react2.default.createElement(
@@ -18030,7 +18030,7 @@
 	                { className: 'nav-item' },
 	                _react2.default.createElement(
 	                  _reactRouterDom.Link,
-	                  { className: 'nav-link', to: "/Login" },
+	                  { className: 'nav-link', to: "/login" },
 	                  'Sign in'
 	                )
 	              ),
@@ -18039,7 +18039,7 @@
 	                { className: 'nav-item' },
 	                _react2.default.createElement(
 	                  _reactRouterDom.Link,
-	                  { className: 'nav-link', to: "/Register" },
+	                  { className: 'nav-link', to: "/register" },
 	                  'Sign up'
 	                )
 	              )

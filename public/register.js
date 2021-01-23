@@ -17922,7 +17922,7 @@
 	                        null,
 	                        "Last name"
 	                    ),
-	                    _react2.default.createElement("input", { type: "text", className: "form-control", placeholder: "Last name" })
+	                    _react2.default.createElement("input", { type: "text", id: "lastname", name: "lastname", className: "form-control", placeholder: "Last name" })
 	                ),
 	                _react2.default.createElement(
 	                    "div",

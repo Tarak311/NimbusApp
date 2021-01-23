@@ -12,6 +12,13 @@ const UserSchema = mongoose.Schema({
     index: { unique: true },
     minlength: 3,
   },
+  lastname: {
+    type: String,
+    required: true,
+    trim: true,
+    index: { unique: true },
+    minlength: 3,
+  },
   email: {
     type: String,
     required: true,
