@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon --exec babel-node server.js --ignore public/",
     "dev": "webpack -wd",
-    "prod": "webpack"
+    "prod": "webpack",
+    "init": "jest --init",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -52,6 +54,7 @@
     "babel-preset-stage-2": "^6.17.0",
     "css-loader": "^0.28.0",
     "dotenv": "^8.2.0",
+    "jest": "^23.6.0",
     "eslint": "^3.7.1",
     "eslint-plugin-react": "^6.4.0",
     "nodemon": "^1.19.1",
