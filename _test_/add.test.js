@@ -1,6 +1,21 @@
+const TestRenderer = require('react-test-renderer')
+function MyComponent() {
+  return (
+    <div>
+      <SubComponent foo="bar" />
+      <p className="my">Hello</p>
+    </div>
+  )
+}
 
-describe('Addition', () => {
-    it('knows that 2 and 2 make 4', () => {
-      expect(2 + 2).toBe(4);
-    });
-  });
+function SubComponent() {
+  return (
+    <p className="sub">Sub</p>
+  );
+}
+
+const testRenderer = TestRenderer.create(<MyComponent />);
+const testInstance = testRenderer.root;
+
+expect(testInstance.findByType(SubComponent).props.foo).toBe('bar');
+expect(testInstance.findByProps({className: "sub"}).children).toEqual(['Sub']);

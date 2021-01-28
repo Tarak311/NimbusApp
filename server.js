@@ -17,9 +17,9 @@ if (process.env.NODE_ENV !== 'production') {
   const methodOverride = require('method-override')
   const db  = require('./lib/db')
   const auth  = require('./lib/auth')
-  import secrets from "./secrets";
-  import config from './config';
-  import apiRouter from './api';
+  const secrets =   require( "./secrets")
+  const config = require('./config')
+  const apiRouter = require('./api')
   app.set('view engine', 'ejs');
   
   app.use(express.urlencoded({ extended: false }))
