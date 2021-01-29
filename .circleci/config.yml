@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/node:7.10
+      - image: circleci/node:9.4.0
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
@@ -23,7 +23,6 @@ jobs:
           - v1-dependencies-
 
       - run: npm install
-      - run: npm run prod
 
       - save_cache:
           paths:
