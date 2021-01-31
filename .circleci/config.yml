@@ -1,4 +1,4 @@
-version: 2
+version: '2.1'
 orbs:
   slack: circleci/slack@4.1
 
@@ -17,6 +17,9 @@ jobs:
 
     steps:
       - checkout
+      - slack/notify:
+          event: pass
+          template: success_tagged_deploy_1
 
       # Download and cache dependencies
       - restore_cache:
