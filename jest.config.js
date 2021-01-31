@@ -7,7 +7,12 @@ module.exports = {
 
   // Stop running tests after the first failure
   // bail: false,
-
+  "verbose": true,
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.(css|scss|less)$": "jest-css-modules-transform"
+    },
+    
   // Respect "browser" field in package.json when resolving modules
   // browser: false,
 
@@ -165,6 +170,7 @@ module.exports = {
   // transformIgnorePatterns: [
   //   "/node_modules/"
   // ],
+  transformIgnorePatterns: ["/node_modules/(?!bootstrap)"],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
