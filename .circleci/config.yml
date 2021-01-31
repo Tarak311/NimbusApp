@@ -1,4 +1,7 @@
 version: 2
+orbs:
+  slack: circleci/slack@4.1
+
 jobs:
   test:
     docker:
@@ -23,7 +26,7 @@ jobs:
           - v1-dependencies-
 
       - run: npm install
-
+      
       - save_cache:
           paths:
             - node_modules
@@ -31,6 +34,11 @@ jobs:
 
       # run tests!
       - run: npm run test
+      - slack/notify:
+          channel: C01LC78RH37
+          event: pass
+          template: basic_fail_1
+
 
   build:
     environment:
